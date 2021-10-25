@@ -6,12 +6,19 @@ public class CameraScript : MonoBehaviour
 {
 
     public GameObject target;
-
     
     // Start is called before the first frame update
     void Start()
     {
-        
+
+    }
+
+    void Update()
+    {
+        if (Input.GetKey("escape"))
+        {
+            Application.Quit();
+        }
     }
 
     // Update is called once per frame
